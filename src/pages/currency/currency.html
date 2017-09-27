@@ -1,0 +1,35 @@
+<ion-toolbar>
+    <ion-title>Pick Base Currency</ion-title>
+</ion-toolbar>
+
+<ion-content padding>
+
+    <ion-grid class="thats-the-grid">
+        <ion-row >
+            <ion-col button (click)="dollar()" class="cella-1" [ngStyle]="{'min-height.px': tileWidth}">
+              
+                <ion-icon name="logo-usd"></ion-icon>
+            </ion-col>
+            <ion-col button (click)="euro()" class="cella-2" [ngStyle]="{'min-height.px': tileWidth}">
+                Euro
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col button (click)="rubel()" class="cella-3" [ngStyle]="{'min-height.px': tileWidth}">
+                Rubel
+            </ion-col>
+            <ion-col button (click)="forint()" class="cella-4" [ngStyle]="{'min-height.px': tileWidth}">
+                Forint
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col button (click)="yen()" class="cella-5" [ngStyle]="{'min-height.px': tileWidth}">
+                Yen
+            </ion-col>
+            <ion-col button (click)="pound()" class="cella-6" [ngStyle]="{'min-height.px': tileWidth}">
+                Pound Sterling
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>

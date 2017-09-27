@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            History Visuals
+        </ion-title>
+    </ion-navbar>
+    </ion-header>
+
+<ion-content padding>
+
+    <div class="ion-canvas">
+        <canvas #canvas (click)="writeShitonScreen()"></canvas>
+    </div>
+
+    <button ion-button color="primary" (click)="visualize()">
+        Visualize Exchange Rate History
+    </button>
+    <ion-item>
+        <ion-label>Date</ion-label>
+        <ion-datetime displayFormat="YYYY" min="1999" max="{{lastYear}}" [(ngModel)]="myDate" (click)="stringMyBitchUp()">
+        </ion-datetime>
+    </ion-item>
+</ion-content>
+
+
+

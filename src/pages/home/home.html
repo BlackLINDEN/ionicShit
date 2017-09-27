@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item button (click)="toHistory(data)" *ngFor="let data of givenData">
+     {{data}}
+    </ion-item>
+  </ion-list>
+</ion-content>
